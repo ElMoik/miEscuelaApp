@@ -9,7 +9,7 @@
     <script src="{{asset('js/jquery-3.6.1.js')}}"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
     </div>
     <footer>
         <hr>
-        MiEscuelitaApp &copy; 2022
+        MiEscuelitaApp &copy; 2022 <br>.
     </footer>
     <script src="{{asset('js/bootstrap.js')}}"></script>
 </body>
