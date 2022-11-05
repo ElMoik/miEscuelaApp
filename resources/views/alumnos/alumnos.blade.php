@@ -2,6 +2,7 @@
 
 @section('contenido')
     <h1>listado de lumnos</h1><hr>
+    <a href="{{ url('/alumno/registrar') }}" class="btn btn-secondary">Registrar Alumno</a><br><br>
     <table class="table table-hover">
         <thead>
             <th>ID</th>
@@ -26,8 +27,8 @@
                 <td>{{ $a->domicilio }}</td>
                 <td>{{ $a->telefono }}</td>
                 <td>
-                    <a href="" class="btn btn-primary btn-sm">Editar</a>
-                    <a href="" class="btn btn-primary btn-sm">Eliminar</a>
+                    <a href="{{url('/alumno/editar')}}/{{$a->id}}" class="btn btn-primary btn-sm">Editar</a>
+                    <a href="{{url('/alumno/eliminar')}}/{{$a->id}}" class="btn btn-danger btn-sm">Eliminar</a>
                 </td>
             </tr>
                 
@@ -37,4 +38,4 @@
     <div class="text-center">
         {{$alumnos->links()}}
     </div>
-@stop
+    @stop
